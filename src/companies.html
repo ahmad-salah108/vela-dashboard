@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأنابيب</title>
+    <!-- Google Fonts Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../css/tables-style.css" />
+  </head>
+  <body>
+    <div class="loading-screen">
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem; color: var(--main-color) !important"
+        role="status"
+      >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <h1 class="heading">الشركات</h1>
+    <div class="table-container section-style">
+      <div
+        class="row"
+        style="gap: 20px; justify-content: center; align-items: center"
+      >
+      <!-- REPEAT THIS U DUMB FUCK -->
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <div class="card card-animation" style="border-radius: 15px">
+            <div class="card-body p-4">
+              <div class="d-flex text-black">
+                <div class="flex-shrink-0">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+                    alt="Generic placeholder image"
+                    class="img-fluid"
+                    style="width: 180px; border-radius: 10px"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-4">اسم الشركة</h5>
+                  <div
+                    class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                    style="background-color: #efefef"
+                  >
+                    <div>
+                      <p class="small text-muted mb-1">رقم الشركة</p>
+                      <p class="mb-0">00000000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex pt-1">
+                    <a
+                      href="company-users.html"
+                      class="btn btn-outline-primary me-1 flex-grow-1"
+                      style="text-decoration: none"
+                    >
+                      عرض
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card card-animation col-md-3 shadow-sm">
+          <a
+            href="company-users.html"
+            style="text-decoration: none; color: #333"
+          >
+            <div class="card-body">
+              <small class="card-subtitle mb-2 text-muted">اسم الشركة:</small>
+              <p class="card-text">فيلا</p>
+              <small class="card-subtitle mb-2 text-muted">رقم الشركة:</small>
+              <p class="card-text">+00 000 0000</p>
+            </div>
+          </a>
+        </div> -->
+      </div>
+    </div>
+    <!-- DELETE MODAL -->
+    <div
+      class="modal fade"
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل تريد حذف الصف؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              لا
+            </button>
+            <button type="button" class="btn btn-primary">نعم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/tables-script.js"></script>
+  </body>
+</html>
