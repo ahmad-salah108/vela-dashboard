@@ -67,12 +67,14 @@ body {
   height: 200px;
   overflow: auto;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .note-wrapper .note {
   background-color: #eee;
   padding: 10px;
   border-radius: 0.5rem;
-  margin-bottom: 15px;
+  overflow: auto;
 }
 .users-wrapper {
   display: flex;
@@ -83,4 +85,14 @@ body {
   padding: 10px;
   background-color: #eee;
   border-radius: 0.5rem;
+}
+.note-40{
+  width: 40%;
+}
+.admin-note{
+  align-self: flex-end;
+}
+.note-wrapper .admin-note .note{
+  background-color: var(--main-color);
+  color: #fff;
 }
