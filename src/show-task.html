@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأنابيب</title>
+    <!-- Google Fonts Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/forms-style.css" />
+    <style>
+      small {
+        color: #a4a4a4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container section-style">
+      <h3 class="mb-4 pb-2" style="border-bottom: 1px solid #ddd">
+        معلومات المهمة
+      </h3>
+      <div style="padding-right: 20px">
+        <div class="row">
+          <div class="col-sm-6">
+            <small>العنوان:</small>
+            <p>Ahmad</p>
+          </div>
+          <div class="col-sm-6">
+            <small>حالة المهمة:</small>
+            <p>email@gmail.com</p>
+          </div>
+          <div class="col-sm-6">
+            <small>تاريخ البداية:</small>
+            <p>email@gmail.com</p>
+          </div>
+          <div class="col-sm-6">
+            <small>تاريخ النهاية:</small>
+            <p>email@gmail.com</p>
+          </div>
+          <div class="col-sm-12 pb-2" style="border-bottom: 1px solid #eee">
+            <small>الوصف:</small>
+            <p>email@gmail.com</p>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <h5>الموظفين:</h5>
+          </div>
+          <div class="col-sm-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">الاسم</th>
+                  <th scope="col">رقم الهاتف</th>
+                  <th scope="col">حالة المهمة</th>
+                  <th scope="col">الملاحظات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>خالد</td>
+                  <td>00000000</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      style="width: 20px; height: 20px"
+                      data-bs-toggle="modal" data-bs-target="#deleteModal"
+                    />
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      الملاحظات
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NOTE MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">الملاحظات</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <label for="desc" class="form-label">إضافة ملاحظة:</label>
+                <textarea
+                  name="desc"
+                  id="desc"
+                  cols="30"
+                  rows="4"
+                  class="form-control"
+                  placeholder="إضافة ملاحظة"
+                ></textarea>
+              </div>
+              <div class="col-md-6">
+                <h6>ملاحظات المستخدم:</h6>
+                <div class="note-wrapper">
+                  <div class="note">ملاحظة</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6>ملاحظات المشرف:</h6>
+                <div class="note-wrapper">
+                  <div class="note">ملاحظة</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button type="button" class="btn btn-primary">موافق</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- APPROVE MODAL -->
+    <div
+      class="modal fade"
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل انت متأكد من إنهاء المهمة؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              لا
+            </button>
+            <button type="button" class="btn btn-primary">نعم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          getPaddinglocalStorage();
+          window.ondeviceorientation = function () {
+            getPaddinglocalStorage();
+          };
+          window.onresize = function () {
+            getPaddinglocalStorage();
+          };
+        }, 100);
+      };
+      function getPaddinglocalStorage() {
+        if (localStorage.getItem("body-padding-top") == "true") {
+          document.body.classList.add("body-padding-top");
+        } else {
+          document.body.classList.remove("body-padding-top");
+        }
+      }
+    </script>
+  </body>
+</html>
